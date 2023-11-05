@@ -1,0 +1,23 @@
+[package]
+name = "shell_fur_ambient"
+
+edition = "2021"
+publish = false
+version = "0.0.1"
+
+[dependencies]
+ambient_api = "0.3.1"
+
+[[bin]]
+name = "shell_fur_ambient_client"
+path = "src/client.rs"
+required-features = ["client"]
+
+[[bin]]
+name = "shell_fur_ambient_server"
+path = "src/server.rs"
+required-features = ["server"]
+
+[features]
+client = ["ambient_api/client"]
+server = ["ambient_api/server"]

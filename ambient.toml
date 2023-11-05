@@ -1,0 +1,6 @@
+[package]
+id = "a572aqamlfd7o5g63ml3gvkbk7lanku5"
+name = "ShellFurAmbient"
+version = "0.0.1"
+content = { type = "Playable" }
+ambient_version = "0.3.1"
